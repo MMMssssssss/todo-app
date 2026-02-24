@@ -34,12 +34,22 @@
     const addButton = document.getElementById("addButton");
     const taskList = document.getElementById("taskList");
 
-    addButton.addEventListener("click", handleClick);
+    addButton.addEventListener("click", addTask);
 
-    const inputvalue = inputTask.value;
+    function addTask() {
+      const inputValue = inputTask.value.trim();
 
-    function handleClick() {
-      alert("Task was added");
+      if (inputValue !== "") {
+        const newTask = document.createElement("p");
+
+        newTask.textContent = inputValue;
+
+        taskList.appendChild(newTask);
+
+        inputValue.value = "";
+      } else {
+        alert("Please enter a task.");
+      }
     }
   </script>
 </html>
