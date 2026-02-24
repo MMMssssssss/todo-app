@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-DO-List</title>
+  </head>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+    .box {
+      text-align: center;
+      width: 40%;
+      height: 300px;
+      border: 1px solid grey;
+      box-shadow: 2px 2px lightgrey;
+      background-color: whitesmoke;
+    }
+    div {
+      padding-top: 25px;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <h1>To Do List</h1>
+      <input type="text" id="inputTask" placeholder="Enter task here" />
+      <button id="addButton">Add Task</button>
+      <div id="taskList">Tasks:</div>
+    </div>
+  </body>
+  <script>
+    const inputTask = document.getElementById("inputTask");
+    const addButton = document.getElementById("addButton");
+    const taskList = document.getElementById("taskList");
+
+    addButton.addEventListener("click", handleClick);
+
+    const inputvalue = inputTask.value;
+
+    function handleClick() {
+      alert("Task was added");
+    }
+  </script>
+</html>

@@ -1,0 +1,25 @@
+.box {
+  width: 50%;
+  border: 1px solid grey;
+  align-items: center;
+  box-shadow: 2px 2px 2px grey;
+  padding-top: 30px;
+}
+h1 {
+  text-align: left;
+}
+.item1 {
+  text-align: center;
+  padding: 5px;
+}
+
+.container {
+  width: 50%;
+  border: 1px solid grey;
+  align-items: center;
+  box-shadow: 2px 2px 2px grey;
+  padding-top: 30px;
+}
+h3 {
+  text-align: center;
+}
