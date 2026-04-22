@@ -1,0 +1,21 @@
+body {
+  background-color: antiquewhite;
+}
+h1 {
+  text-align: center;
+  color: lightseagreen;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#addButton {
+  width: 80px;
+  height: 25px;
+  border-style: groove;
+  color: lightseagreen;
+  background-color: white;
+}
+#taskList {
+  text-align: center;
+  color: lightseagreen;
+  font-family: "Courier New", Courier, monospace;
+}
