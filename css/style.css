@@ -1,0 +1,17 @@
+h2 {
+  color: lightseagreen;
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+}
+#inputTask,
+#addButton {
+  text-align: left;
+  margin: auto;
+}
+#taskList {
+  color: lightseagreen;
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  justify-content: center;
+  padding-top: 35px;
+}
