@@ -4,6 +4,12 @@ const taskList = document.getElementById('taskList');
 
 addButton.addEventListener("click", addTask);
 
+inputTask.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        addTask();
+    }
+});
+
 function addTask() {
     const inputValue = inputTask.value.trim();
 
@@ -17,5 +23,6 @@ function addTask() {
     } else {
         alert('Please enter a task.');
     }
+
 
 }
